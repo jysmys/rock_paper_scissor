@@ -2,12 +2,14 @@ body {
     background-color: white;
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    margin-left: 250px;
-    margin-right: 250px;  
+    margin-left: 10%;
+    margin-right: 10%; 
     border-left: 2px solid pink;
     border-right: 2px solid pink;
     width: 70%;
     align-self: center;
+    align-content: center;
+
   }
 header {
     align-self: center;
@@ -32,7 +34,7 @@ h1 {
     letter-spacing: 0.2em;
 }
 h3 {
-    font-size: 35px;
+    font-size: 25px;
     color: palevioletred;
     font-style: italic;
   }
@@ -43,13 +45,14 @@ a {
     letter-spacing: 0.1em;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: 1000;
 }
 p {
-    font-size: 30px;
+    font-size: 20px;
     color: palevioletred;
 }
   
-.about, .game, .navigate {
+.about, .game, .navigate, .result {
     background-color: rgb(255, 227, 232);
     margin-left: 10%;
     margin-right: 10%;
@@ -59,21 +62,50 @@ p {
     color: palevioletred;
     padding: 20px;
     border-bottom: 2px solid pink;
-    border-top    : 2px solid pink;
+    border-top: 2px solid pink;
     }
 .about {
     padding-top: 30px;
     padding-bottom: 10px;
 }
-.game{
-    padding-bottom: 100px;
+.game {
+    padding-bottom: 30px;
     padding-top: 30px;
+    margin-bottom: 0px;
+}
+.result {
+    padding-bottom: 100px;
+    padding-top: 100px;
+    border-bottom: 2px solid pink;
+    border-top: 2px solid pink;
 }
 input {
     font-size: medium;
     color: lightpink;
     border: 2px solid rgb(248, 142, 160);
     width: 200px;
+    height: 25px;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 0.2ex;
+}
+button {
+    color: palevioletred; 
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(245, 217, 221);
+    width: 100px;
     height: 30px;
-    /* text-align: center; */
+    text-align: center;
+    border: 3px solid rgb(248, 142, 160);
+    border-style: outset;
+    margin: 15px;
+    font-weight: 900;
+    font-size: medium;
+    padding-bottom: 30px;
+    padding-top: 5px;
+    letter-spacing: 0.3ex;
+
+}
+footer {
+    padding-bottom: 200px;
 }
