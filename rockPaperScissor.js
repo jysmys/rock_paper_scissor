@@ -1,5 +1,5 @@
 const getUserChoice = userInput => {
-    userInput = userInput.toLowerCase();
+    console.log(userInput);
        if (userInput == 'rock' || userInput == 'paper' || userInput == 'scissors') {
         return userInput;
        } else {
@@ -38,12 +38,15 @@ const determineWinner = (userChoice, getComputerChoice) => {
 }
 
 const playGame = () => {
-    const userChoice = getUserChoice('rock');
+    // var userRawInput = document.getElementById("userInput").innerHTML;
+    var userRawInput = "rock"; 
+    const userChoice = getUserChoice(userRawInput.toString().toLowerCase());
     const computerChoice = getComputerChoice();
     console.log(`use choise: ${userChoice} , computer choise: ${computerChoice}`);
 
     console.log(determineWinner(userChoice, computerChoice));
 
+
 }
 
-playGame();
+// playGame();
